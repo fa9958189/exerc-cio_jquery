@@ -1,0 +1,78 @@
+/* Estilo geral */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Centralizar conteúdo */
+  .container {
+    text-align: center;
+    background-color: #007BFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  /* Efeito de brilho */
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(0, 123, 255, 1);
+    }
+  }
+  
+  /* Lista de tarefas */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Tarefa concluída */
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  /* Formulário */
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #f0f0f0;
+  }
+  
